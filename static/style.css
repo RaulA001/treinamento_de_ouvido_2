@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+:root{
+    --C1: #22BD98;
+    --C2: #758A85;
+    --C3: #6CF086;
+    /* #F2A9D8 #B12FBD*/
+}
+
+footer {
+    background-color: rgb(44, 44, 44);
+    padding: 5px 0px;
+    text-align: center;
+}
