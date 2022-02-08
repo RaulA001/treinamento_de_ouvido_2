@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>farme de som</title>
-    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
-    <link rel="shortcut icon" type="text/css" href="{{url_for('static', filename='favicon.ico')}}" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="../static/style.css">
+    <link rel="shortcut icon"  href="{{url_for('static', filename='favicon.ico')}}" type="image/x-icon">
 </head>
 <body>
 
@@ -20,16 +20,22 @@
              
     </header>
     <main>
-        <a href="#">
-            <div class="Testes">
-                <h1 class="nome_teste">teste</h1>
-                <p class="notas_teste">A B C D</p>
-            </div>
-        </a>
-        <a href="#">
-            <div id="novo_teste">
-                <h1 class="nome_teste" id="novo_nome_teste">novo teste</h1>
-            </div>
+        <ul>
+            <li>
+                <a href="#">
+                    <div class="Testes">
+                        <h1 class="nome_teste">teste</h1>
+                        <p class="notas_teste">A B C D</p>
+                    </div>
+                </a>
+            </li>
+        </ul>
+        <a href="#" id="novo_teste_a">
+                <div id="novo_teste_div2">
+                    <div id="novo_teste_div">
+                        <h1 class="nome_teste" id="novo_nome_teste">novo teste</h1>
+                    </div>
+                </div>
         </a>
     </main>
     <footer>

@@ -6,7 +6,7 @@ from controlles.test_menu import app as test
 
 
 #app def
-app = Flask(__name__, template_folder='templates')
+app = Flask(__name__, template_folder='templates', static_folder='static')
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///estud.db'
 
 #Controlles
