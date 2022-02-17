@@ -9,22 +9,25 @@
     <link rel="shortcut icon"  href="{{url_for('static', filename='favicon.ico')}}" type="image/x-icon">
 </head>
 <body>
-    <h1>NN</h1>
+    <h1>Nova nota</h1>
     <a href="http://127.0.0.1:5000/menu/">main</a>
 
-    <form action="http://127.0.0.1:5000/novo_teste/" method="post">
+    <form action="http://127.0.0.1:5000/menu/nova_nota" method="post">
         
         <div class="row">
             <div class="col-md-6">
                 <input type="text" name="nome" id="nome" placeholder="nome" class="form-control">
             </div>
+
             <div class="col-md-6">
-                <input type="text" name="local" id="local" placeholder="local" class="form-control">
+                <input type="text" name="oitava"    id="oitava" placeholder="oitava"   class="form-control">
+            </div>
+
+            <div class="col-md-6">
+                <input type="text" name="tipo_do_arquivo" id="tipo_do_arquivo" placeholder="tipo_do_arquivo" class="form-control">
             </div>
         </div>
-        <div class="col-md-6">
-            <input type="text" name="oitava" id="oitava" placeholder="oitava" class="form-control">
-        </div>
+
     </div>
     <div>
         <a href="http://127.0.0.1:5000/menu/novo_teste">nova nota</a>

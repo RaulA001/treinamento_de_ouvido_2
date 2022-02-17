@@ -17,8 +17,17 @@ def test():
 
 @app.route('/nova_nota', methods=['GET', 'POST'])
 def nova_nota():
-    return render_template('nova_nota.html')
+    if request.method == 'POST':
+        inputs = Notas(request.form['nome'], request.form['oitava'], request.form['tipo_do_arquivo'])
+        db.session.add(inputs)
+        db.session.commit()
+        return redirect(url_for(novo_teste))
+    else:
+        return render_template('nova_nota.html')
 
 @app.route('/novo_teste', methods=['GET', 'POST'])
 def novo_teste():
-    return render_template('novo_teste.html')
+    if request.method == 'POST':
+        return render_template('novo_teste.html')
+    else:
+        return render_template('novo_teste.html')
